@@ -14,6 +14,10 @@ I am a full-time programmer with skills in:
  - Systems design (Maplesim, AutoCAD, SolidWorks)
  - Mathematics (Maple18, numpy, Eigen, MATLAB)
 
+## What is in here?
+
+In this repo you will find my resume, CV, coverletter and other documents that I have written for awards.
+
 ## Preview
 
 #### Résumé
