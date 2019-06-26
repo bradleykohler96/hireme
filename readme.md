@@ -4,9 +4,10 @@
 
 ## About me
 
-I am a Mechatronics engineer at McMaster University.
-I will be graduating from McMaster University in May 2020.
-I am a full-time programmer with skills in:
+Mechatronics engineer at McMaster University.
+Coding is my passion.
+I like to solving new, challenging problems.
+My programming skills include (but are not limited to):
  - BASH, C/C++, Python and Java
  - Microcontroller and Microprocessor firmware (MATLAB/Simulink, Labview, ARM Mbed, STM32, Nordic, Qualcomm Snapdragon)
  - Embedded Operating Systems (Linux, mbedOS, ChibiOS, FreeRTOS)
