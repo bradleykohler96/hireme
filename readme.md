@@ -1,3 +1,7 @@
+# Hire Me
+
+<div style="text-align:center"><img src="images/icon.png" /></div>
+
 ## Preview
 
 #### Résumé
