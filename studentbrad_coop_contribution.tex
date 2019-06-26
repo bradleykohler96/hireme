@@ -1,0 +1,123 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[14pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{0000CC}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+%\definecolor{darktext}{HTML}{000000}
+\definecolor{text}{HTML}{000000}
+\definecolor{graytext}{HTML}{000000}
+%\definecolor{lighttext}{HTML}{000000}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{images/photo.jpg}
+\name{Bradley}{Kohler}
+\position{Mechatronics Engineer{\enskip\cdotp\enskip}University Undergrad}
+\address{Waterloo, ON, Canada}
+
+% \mobile{(+999) 999 9999}
+\email{bradleykohler96@gmail.com}
+\github{studentbrad}
+% \gitlab{gitlab-id}
+\stackoverflow{9246673}{studentbrad}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Engineering Co-op and Career Services}
+  {McMaster University\\1280 Main Street West\\Hamilton, Ontario\\L8S 4L8}
+% The date on the letter, default is the date of compilation
+\letterdate{March 4, 2019}
+% The title of the letter
+\lettertitle{Student's Contribution to Co-operative Education}
+% How the letter is opened
+\letteropening{Dear Sir/Madam}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure{}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {March 4, 2019}
+  {Bradley Kohler~~~·~~~Student's Contribution}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+Please accept this letter and the attached documents as my application for the 2018 McMaster Engineering Co-op Student of the Year Award.  In this document you will find all of the supporting letters and essays.  Thank you for considering my application.
+
+\section*{Impact on Co-op and Career Services}
+I believe that I have had a significant impact on McMaster Univeristy and the McMaster Co-op and Career Services.  My greatest contributions were working with the McMaster Center for Software Certification and expanding the McMaster network for student jobs.  MCSCERT is the department where I gained real work experience.  It may not seem obvious, but my work experience with MCSCERT was entirely voluntary.  I was looking to get some exposure to software development so I joined the development team at McMaster to design and implment safety critical systems.  I was a strong asset to the project because I had experience programming safety critical systems.  The students I worked with will advocate for me when I say that I was a dependable and supportive team member.  Unlike most co-op students, I did not use the McMaster co-op career network.  I found my own career opportunities.  This is useful to the university because it expands the network of possible student co-op positions.  Northern Digital Inc. recently registered with the McMaster co-op career network and hired two McMaster students not including myself.  One student is a co-op and the other is a full time graduate.  Northern Digital Inc. is pleased with the co-op program at McMaster because unlike other universities it allows for a sixteen month professional development year.  I have assisted with the co-op hiring process during my time at Northern Digital Inc.  Soon I will be mentoring a new co-op student this summer once the selection process is completed.  I hope that I can pass on some of my insight and experiences to help the new student transition into their new position with the advanced research team. 
+
+\section*{Impact on the McMaster Community}
+I am enthusiastic about helping people gain experience and build the skills necessary for their future career.  The Mechanics community and engineering community in general is expanding.  This is why networking is so important.  I occasionally attend engineering events such as Hack the North, First Robotics and social events at the university.  I consider myself very involved and social.  I am always inclusive and conscious of others.  Everyone has potential and engineering is a subject worth talking about.
+
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
