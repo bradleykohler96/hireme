@@ -2,6 +2,18 @@
 
 <div style="text-align:center"><img src="images/icon.png" /></div>
 
+## About me
+
+I am a Mechatronics engineer at McMaster University.
+I will be graduating from McMaster Univeristy in May 2020.
+I am a full-time programmer with skills in:
+ - BASH, C/C++, Python and Java
+ - Microcontroller and Microprocessor firmware (MATLAB/Simulink, Labview, ARM Mbed, STM32, Nordic, Qualcomm Snapdragon)
+ - Embedded Operating Systems (Linux, mbedOS, ChibiOS, FreeRTOS)
+ - PCB hardware design (Verilog HDL, NI Multisim, Eagle)
+ - Systems design (Maplesim, AutoCAD, SolidWorks)
+ - Mathematics (Maple18, numpy, Eigen, MATLAB)
+
 ## Preview
 
 #### Résumé
