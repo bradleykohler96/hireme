@@ -4,7 +4,7 @@
 
 | Page. 1 | Page. 2 |
 |:---:|:---:|
-| [![Résumé](https://github.com/studentbrad/hireme/tree/master/images/studentbrad_resume-001.jpg)](https://github.com/studentbrad/hireme/tree/master/resume.pdf)  | [![Résumé](https://github.com/studentbrad/hireme/tree/master/images/studentbrad_resume-002.jpg)](https://github.com/studentbrad/hireme/tree/master/resume.pdf) |
+| [![Résumé](https://github.com/studentbrad/hireme/tree/master/images/studentbrad_resume-001.jpg)](https://github.com/studentbrad/hireme/tree/master/studentbrad_resume.pdf)  | [![Résumé](https://github.com/studentbrad/hireme/tree/master/images/studentbrad_resume-002.jpg)](https://github.com/studentbrad/hireme/tree/master/studentbrad_resume.pdf) |
 
 #### Personal Statement Student Coop Nomination
 
