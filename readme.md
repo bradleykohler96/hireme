@@ -1,6 +1,6 @@
 # Hire Me
 
-<center><img src="images/icon.png" ...></center>
+<center><img src="svg/icon.svg" style="width:600px;height:600px;"></center>
 
 ## About me
 
