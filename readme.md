@@ -8,7 +8,7 @@
 
 Mechatronics engineer at McMaster University. <br />
 Coding is my passion. <br />
-I like to solving new, challenging problems. <br />
+I like to solve new, challenging problems. <br />
 My programming skills include (but are not limited to): <br />
  - BASH, C/C++, Python and Java
  - Microcontroller and Microprocessor firmware (MATLAB/Simulink, Labview, ARM Mbed, STM32, Nordic, Qualcomm Snapdragon)
@@ -20,6 +20,17 @@ My programming skills include (but are not limited to): <br />
 ## What is in here?
 
 In this repo you will find my resume, CV, coverletter and other documents that I have written for awards.
+
+## Getting Started
+
+This project depends on the following packages:
+
+ - [GhostScript](https://www.ghostscript.com)
+
+To build my application simply run
+```
+./make.sh
+```
 
 ## Preview
 
