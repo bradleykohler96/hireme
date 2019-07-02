@@ -1,3 +1,4 @@
+#!/bin/bash
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # ...
     GS=gs.exe
@@ -20,16 +21,21 @@ if ! type "$GS" > /dev/null; then
     echo "ghostscript not installed"
 fi
 
+SOURCE_DIR="src"
+BUILD_DIR="build"
+IMAGE_DIR="images"
+
 shopt -s nullglob
-array=(*.tex)
+array=($SOURCE_DIR/*.tex)
 for i in "${array[@]}"
 do
     echo "file found $i"
     echo "creating files generated from xelatex"
-    xelatex -interaction nonstopmode -halt-on-error -file-line-error -quiet $i
-    basename $i
+    xelatex -interaction nonstopmode -halt-on-error -file-line-error -quiet -include-directory=$SOURCE_DIR -output-directory=$BUILD_DIR $i
     if command -v $GS > /dev/null; then
-    echo "creating ${i%.tex}.jpg image for readme"
-    "$GS" -q -dNOPAUSE -sDEVICE=jpeg -r400 -dJPEGQ=60 -sOutputFile=images/${i%.tex}-%03d.jpg ${i%.tex}.pdf -dBATCH
+    filename=$(basename $i)
+    echo "creating ${filename%.tex}.jpg image for readme"
+    $GS -q -dNOPAUSE -sDEVICE=jpeg -r400 -dJPEGQ=60 -sOutputFile=$IMAGE_DIR/${filename%.tex}-%03d.jpg $BUILD_DIR/${filename%.tex}.pdf -dBATCH
     fi
 done
+echo "done"
