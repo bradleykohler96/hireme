@@ -27,9 +27,16 @@ This project depends on the following packages:
 
  - [GhostScript](https://www.ghostscript.com)
 
+If no ghostscript is installed images won't be regenerated for readme.md.
+
 To build my application simply run
 ```
-./make.sh
+make
+```
+
+To clean my application simply run
+```
+make clean
 ```
 
 ## Preview
