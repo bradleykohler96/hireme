@@ -43,9 +43,9 @@ make clean
 
 #### Résumé
 
-| Page. 1 | Page. 2 |
-|:---:|:---:|
-| [![Résumé](images/studentbrad_resume-001.jpg)](build/studentbrad_resume.pdf)  | [![Résumé](images/studentbrad_resume-002.jpg)](build/studentbrad_resume.pdf) |
+| Page. 1 |
+|:---:|
+| [![Résumé](images/studentbrad_resume-001.jpg)](build/studentbrad_resume.pdf)  |
 
 #### Personal Statement Student Coop Nomination
 
