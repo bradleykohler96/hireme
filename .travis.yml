@@ -9,20 +9,11 @@ matrix:
     sudo: required
   fast_finish: true
 before_install:
-  - 'sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889'
-  - 'echo "deb http://miktex.org/download/ubuntu xenial universe" | sudo tee /etc/apt/sources.list.d/miktex.list'
+  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
 addons:
   apt:
     update: true
     packages:
-      - miktex
       - ghostscript
 script:
   - 'make'
-deploy:
-  provider: releases
-  file: build/studentbrad_resume.pdf
-  skip_cleanup: true
-  on:
-    repo: studentbrad/hirme
-    tags: true
