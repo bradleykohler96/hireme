@@ -11,6 +11,7 @@ matrix:
 addons:
   apt:
     packages:
+      - texlive-xetex
       - ghostscript
 script:
   - 'make'
