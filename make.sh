@@ -1,10 +1,10 @@
 #!/bin/bash
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # ...
-    GS=gs.exe
+    GS=gs
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
-    GS=gs.exe
+    GS=gs
 elif [[ "$OSTYPE" == "cygwin" ]]; then
     # POSIX compatibility layer and Linux environment emulation for Windows
     GS=gswin64c.exe
@@ -14,7 +14,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then
 else
     # Unknown.
     echo "no known operating system"
-    GS=""
+    GS=gs
 fi
 
 if ! type "$GS" > /dev/null; then

@@ -1,0 +1,23 @@
+language:
+- 'generic'
+compiler:
+- 'gcc'
+matrix:
+  include:
+  - os: linux
+    dist: xenial
+    sudo: required
+  fast_finish: true
+addons:
+  apt:
+    packages:
+      - ghostscript
+script:
+  - 'make'
+deploy:
+  provider: releases
+  file: build/studentbrad_resume.pdf
+  skip_cleanup: true
+  on:
+    repo: studentbrad/hirme
+    tags: true
