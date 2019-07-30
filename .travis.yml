@@ -14,7 +14,7 @@ cache:
   - $HOME/.texlive
 addons:
   artifacts:
-    *.pdf
+    - "*.pdf"
     working_dir: build
 before_install:
 # MikTeX
