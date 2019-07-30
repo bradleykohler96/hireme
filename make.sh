@@ -30,8 +30,8 @@ array=($SOURCE_DIR/*.tex)
 for i in "${array[@]}"
 do
     echo "file found $i"
-    echo "creating files generated from xelatex"
-    xelatex -interaction nonstopmode -halt-on-error -file-line-error -quiet -include-directory=$SOURCE_DIR -output-directory=$BUILD_DIR $i
+    echo "creating files generated from pdflatex"
+    xelatex -interaction=nonstopmode -halt-on-error -file-line-error -quiet -include-directory=$SOURCE_DIR -output-directory=$BUILD_DIR $i
     if command -v $GS > /dev/null; then
     filename=$(basename $i)
     echo "creating ${filename%.tex}.jpg image for readme"
