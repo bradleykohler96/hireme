@@ -7,6 +7,11 @@ matrix:
   - os: linux
     dist: xenial
     sudo: required
+cache:
+  directories:
+# TeX Live
+  - "/tmp/texlive"
+  - "$HOME/.texlive"
 before_install:
 # MikTeX
 #  - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
@@ -23,5 +28,9 @@ before_install:
 #  - cd make4ht
 #  - ls -la
 #  - make
+# GhostScript
+  -sudo apt-get install ghostscript
 script:
   - make
+after_success:
+  - make clean
