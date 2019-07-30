@@ -13,9 +13,7 @@ cache:
   - /tmp/texlive
   - $HOME/.texlive
 addons:
-  artifacts:
-    - "*.pdf"
-    working_dir: build
+  working_dir: build
 before_install:
 # MikTeX
 #  - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
