@@ -9,28 +9,26 @@ matrix:
     sudo: required
 cache:
   directories:
-# TeX Live
-  - /tmp/texlive
-  - $HOME/.texlive
-addons:
-  working_dir: build
+  - "/tmp/texlive"
+  - "$HOME/.texlive"
 before_install:
-# MikTeX
-#  - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
-#  - echo "deb http://miktex.org/download/ubuntu xenial universe" | sudo tee /etc/apt/sources.list.d/miktex.list
-#  - sudo apt-get update
-#  - sudo apt-get install miktex
-# TeX Live
-  - sudo apt-get -qq update 
-  - sudo apt-get install -y --no-install-recommends texlive-full
-# make4ht
-#  - sudo apt-get install latexmk
-#  - sudo apt-get install pandoc
-#  - git clone https://github.com/michal-h21/make4ht
-#  - cd make4ht
-#  - ls -la
-#  - make
-# GhostScript
-  - sudo apt-get install ghostscript
+- sudo apt-get -qq update
+- sudo apt-get install -y --no-install-recommends texlive-full
+- sudo apt-get install ghostscript
 script:
-  - make
+- make
+env:
+  global:
+    secure: OebWd7nnFqC9DLrgxKxll7JNi9t2VNMf91d9CyAURIAOaoeHdzdUWdBWQUHMRgHoUwiw4HOrOOsV+gYcYSZrD94dPm59ZANt3XXI83NXX2qyNTJNVrCq8bTfb19knLx8PAqZbLII6Xn8B1fk/28g78WWMEkN42G6EVrFXeop+A7k4BXAC6c3K6eWqwfY0Zu1FZ/zTDpiajOrGdpBIJH1ulGORXS9X2IE/mtEEiZGtA0qgT8kCva347QCPRw6t8EX4d7j3Sn6+0ZkuhQco2kyCbnL3VVct/ZpJo3kuRN9OJqFZyFojUlIHW2z/VxagjpyJKEYny8t63Y3id3nVWG/vIz69ZQioFu8nSinrkn3GxbyEI1JGOB8C9dit0oG28V/e5WnxKyqLeQnnQ2nkkKoGGWHiVL3gajMkzQOX/P0+iYNvcdP0LLOCTtPNTXnOVYFLkJvjc/B0hZdzO9RkmoGsRDHiX/ddsp74w4dkJXnNULNduODGmuFSfrGrYMsR0EVMB5WVWxIn0EUiEQg8MkHBpQW90ULQsbDilMyNQ+KxUqFMOFzT+rM6Zf9GLjoRLBzJh5GweJGyMmJpsbyy88gt0yAufDQvlj/oRSzLp51/gIIbx/s05ssl9yM3DH2/mpTTlDyl9jdM7ebvr7u2t/LiSHx8KNm5hVDabbWX72TH5o=
+deploy:
+  provider: releases
+  file:
+  - build/studentbrad_coop_contribution.pdf
+  - build/studentbrad_coop_nominee_bio.pdf
+  - build/studentbrad_coop_personal_statement.pdf
+  - build/studentbrad/resume.pdf
+  skip_cleanup: true
+  on:
+    repo: studentbrad/hireme
+    tags: true
+    all_branches: true
