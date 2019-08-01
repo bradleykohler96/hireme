@@ -16,18 +16,15 @@ before_install:
 - sudo apt-get install -y --no-install-recommends texlive-full
 - sudo apt-get install ghostscript
 script:
-- make 
+- make
 deploy:
-  api_key:
-    secure: OebWd7nnFqC9DLrgxKxll7JNi9t2VNMf91d9CyAURIAOaoeHdzdUWdBWQUHMRgHoUwiw4HOrOOsV+gYcYSZrD94dPm59ZANt3XXI83NXX2qyNTJNVrCq8bTfb19knLx8PAqZbLII6Xn8B1fk/28g78WWMEkN42G6EVrFXeop+A7k4BXAC6c3K6eWqwfY0Zu1FZ/zTDpiajOrGdpBIJH1ulGORXS9X2IE/mtEEiZGtA0qgT8kCva347QCPRw6t8EX4d7j3Sn6+0ZkuhQco2kyCbnL3VVct/ZpJo3kuRN9OJqFZyFojUlIHW2z/VxagjpyJKEYny8t63Y3id3nVWG/vIz69ZQioFu8nSinrkn3GxbyEI1JGOB8C9dit0oG28V/e5WnxKyqLeQnnQ2nkkKoGGWHiVL3gajMkzQOX/P0+iYNvcdP0LLOCTtPNTXnOVYFLkJvjc/B0hZdzO9RkmoGsRDHiX/ddsp74w4dkJXnNULNduODGmuFSfrGrYMsR0EVMB5WVWxIn0EUiEQg8MkHBpQW90ULQsbDilMyNQ+KxUqFMOFzT+rM6Zf9GLjoRLBzJh5GweJGyMmJpsbyy88gt0yAufDQvlj/oRSzLp51/gIIbx/s05ssl9yM3DH2/mpTTlDyl9jdM7ebvr7u2t/LiSHx8KNm5hVDabbWX72TH5o=
   provider: releases
+  api_key:
+    secure: VPKL0RyPQvJrXM+mfuAEfIFM25d2PhY9C1G2RHootK0d129XiyzmkA4XT/3dEgf8tUa8AyFUGyUt1DbyBJJme6yQ6kQq0GvNmbgX7f19E7ODKYMIgh6PU1aa5hVA7EdFb1xeyBSZ8Ygph4RL8u0R7wTde0TI68Ey4ES3VkwFDT7j/BunmrWYh7A7AHARrH6SqM/2SGVbNL9F11kHV5VCAvZ4S3RQJ5IlX64/LpIgfg1L7v9RYtHalBghZPcB9vk/fJ29Uik1E55c3rs/5Ft7vX5BcqhYKb0WQLW1bg8NkRke0IOzq4JVTtVGdCb17dY3KJvurPxVhizzJQ3wvkkOExWqK3/uquZUik6+803zE7XD6JmdX5HhC/xhnF26p+e8H6EwsKED8F+iMv8IwF22WI9FwD9mBYJYF2IlyhtnSlWX3SVIV5AyP25peULERif6RqLB1aoRE0TKbyuvMfCU1mSPFeE8pylHk37xcTjBdAAyN0LWcTSffM3y3HgFvs6fKIB/eKKeS/HN+OZ/Ih2nYvwFmeEep+AgX2ah4mG6J8y5VD8bzC0ekncl1dAz7AK4CrG1YVoYilRfdVjfzP7RmJ7tXyF7qSUZkj0PZo38sN77F7E/8d/JyzdDDI7GEbd5U8rVOcAUcRYOtCZaWygSfJ/dmNf3JUC7crUqWPXPMuA=
   file:
   - build/studentbrad_coop_contribution.pdf
   - build/studentbrad_coop_nominee_bio.pdf
   - build/studentbrad_coop_personal_statement.pdf
-  - build/studentbrad/resume.pdf
-  skip_cleanup: true
+  - build/studentbrad_resume.pdf
   on:
     repo: studentbrad/hireme
-    tags: true
-    all_branches: true
