@@ -17,7 +17,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[14pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -34,10 +34,10 @@
 
 % Colors for text
 % Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
+%\definecolor{darktext}{HTML}{000000}
+\definecolor{text}{HTML}{000000}
+\definecolor{graytext}{HTML}{000000}
+%\definecolor{lighttext}{HTML}{000000}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
@@ -54,9 +54,9 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[circle,noedge,left]{images/photo.jpg}
+\photo[circle,noedge,right]{images/photo.jpg}
 \name{Bradley}{Kohler}
-\position{Mechatronics Engineer{\enskip\cdotp\enskip}16 Months of Co-op Experience}
+\position{Mechatronics Engineer{\enskip\cdotp\enskip}University Undergrad}
 \address{Waterloo, ON, Canada}
 
 % \mobile{(+999) 999 9999}
@@ -74,26 +74,24 @@
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+\makecvheader[L]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Bradley Kohler~~~·~~~Resume}
-  {\thepage}
+  {Bradley Kohler~~~·~~~Personal Biography}
+  {}
 
 %-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
+%	BIOGRAPHY CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-% \input{resume/summary.tex}
-\input{resume/skills.tex}
-\input{resume/experience.tex}
-\input{resume/education.tex}
-\input{resume/projects.tex}
-% \input{resume/research.tex}
-% \input{resume/extracurricular.tex}
+\input{biography/hometown.tex}
+\input{biography/education.tex}
+\input{biography/interests_engineer.tex}
+\input{biography/interests_personal.tex}
+\input{biography/future.tex}
 
 %-------------------------------------------------------------------------------
 \end{document}
