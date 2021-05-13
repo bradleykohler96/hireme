@@ -46,13 +46,19 @@ make clean
 |:---:|
 | [![Résumé](images/studentbrad_resume-001.jpg)](build/studentbrad_resume.pdf)  |
 
-#### Personal Statement Student Coop Nomination
+#### Biography
+
+| Page. 1 |
+|:---:|
+| [![Biography](images/studentbrad_bio-001.jpg)](build/studentbrad_bio.pdf) |
+
+#### Student Coop Nomination - Personal Statement
 
 | Page. 1 | Page. 2 |
 |:---:|:---:|
 | [![Personal Statement](images/studentbrad_coop_personal_statement-001.jpg)](build/studentbrad_coop_personal_statement.pdf) | [![Personal Statement](images/studentbrad_coop_personal_statement-002.jpg)](build/studentbrad_coop_personal_statement.pdf) |
 
-#### Student Coop Nominee Bio
+#### Student Coop Nomination - Nominee Bio
 
 | Page. 1 |
 |:---:|
