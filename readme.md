@@ -1,8 +1,5 @@
 # Hire Me
 
-<p align="center"> <img src="images/icon.png"> </p> <br />
-<p> <img src="https://travis-ci.com/studentbrad/hireme.svg?branch=master"> </p>
-
 ## About me
 
 Mechatronics engineer at McMaster University. <br />
