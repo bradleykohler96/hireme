@@ -1,5 +1,7 @@
 # Hire Me
 
+<img src="images/banner.png" /><br />
+
 ## About me
 
 Mechatronics engineer at McMaster University. <br />
