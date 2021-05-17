@@ -26,7 +26,7 @@ coop_personal_statement: studentbrad_coop_personal_statement.tex
 	-sOutputFile=$(IMAGEDIR)/studentbrad_coop_personal_statement-%03d.jpg \
 	$(BUILDDIR)/studentbrad_coop_personal_statement.pdf -dBATCH
 
-personal_bio: studentbrad_personal_bio.tex ./biography/*.tex
+personal_bio: studentbrad_personal_bio.tex ./personal_bio/*.tex
 	latexmk -xelatex studentbrad_personal_bio.tex \
 	-output-directory=build
 	rm -f $(IMAGEDIR)/studentbrad_personal_bio-*.jpg
@@ -34,7 +34,7 @@ personal_bio: studentbrad_personal_bio.tex ./biography/*.tex
 	-sOutputFile=$(IMAGEDIR)/studentbrad_personal_bio-%03d.jpg \
 	$(BUILDDIR)/studentbrad_personal_bio.pdf -dBATCH
 
-personal_resume: studentbrad_personal_resume.tex ./resume/*.tex
+personal_resume: studentbrad_personal_resume.tex ./personal_resume/*.tex
 	latexmk -xelatex studentbrad_personal_resume.tex \
 	-output-directory=build
 	rm -f $(IMAGEDIR)/studentbrad_personal_resume-*.jpg
