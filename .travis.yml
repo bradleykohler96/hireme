@@ -26,6 +26,6 @@ deploy:
   - build/studentbrad_coop_nominee_bio.pdf
   - build/studentbrad_coop_personal_statement.pdf
   - build/studentbrad_personal_bio.pdf
-  - build/studentbrad_resume.pdf
+  - build/studentbrad_personal_resume.pdf
   on:
     repo: studentbrad/hireme
