@@ -29,3 +29,4 @@ deploy:
   - build/studentbrad_personal_resume.pdf
   on:
     repo: studentbrad/hireme
+    tags: true
