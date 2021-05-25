@@ -8,12 +8,13 @@ Mechatronics engineer at McMaster University. <br />
 Coding is my passion. <br />
 I like to solve new, challenging problems. <br />
 My programming skills include (but are not limited to): <br />
- - BASH, C/C++, Python and Java
- - Microcontroller and Microprocessor firmware (MATLAB/Simulink, Labview, ARM Mbed, STM32, Nordic, Qualcomm Snapdragon)
- - Embedded Operating Systems (Linux, mbedOS, ChibiOS, FreeRTOS)
- - PCB hardware design (Verilog HDL, NI Multisim, Eagle)
- - Systems design (Maplesim, AutoCAD, SolidWorks)
- - Mathematics (Maple18, numpy, Eigen, MATLAB)
+ - BASH, C/C++, Python, Java and HTML/CSS/Javascript
+ - Machine Learning (Pytorch, Tensorflow)
+ - Microprocessor Firmware (STM32, Nordic, Qualcomm Simulink)
+ - Operating Systems (Linux, AndroidOS, mbedOS, ChibiOS, FreeRTOS)
+ - Hardware Design (Verilog HDL, NI Multisim, Eagle)
+ - Systems Design (AutoCAD, SolidWorks, Maplesim)
+ - Mathematics (Maple18, NumPy, Eigen, MATLAB)
 
 ## What is in here?
 
