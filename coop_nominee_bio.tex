@@ -40,14 +40,10 @@
 %\definecolor{lighttext}{HTML}{000000}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
+\setbool{acvSectionColorHighlight}{false}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-
-\makeatletter
-\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
-\makeatother
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
@@ -57,10 +53,10 @@
 \photo[circle,noedge,right]{images/photo.jpg}
 \name{Bradley}{Kohler}
 \position{Mechatronics Engineer{\enskip\cdotp\enskip}University Graduate}
-\address{Toronto, ON, Canada}
+\address{Waterloo, ON, Canada}
 
 % \mobile{(+999) 999 9999}
-\email{studentbrad.github@gmail.com}
+\email{bradleykohler96@gmail.com}
 \github{studentbrad}
 % \gitlab{gitlab-id}
 \stackoverflow{9246673}{studentbrad}
@@ -70,28 +66,57 @@
 % \extrainfo{extra informations}
 
 %-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Engineering Co-op and Career Services}
+  {McMaster University\\1280 Main Street West\\Hamilton, Ontario\\L8S 4L8}
+% The date on the letter, default is the date of compilation
+\letterdate{March 4, 2019}
+% The title of the letter
+\lettertitle{}
+% How the letter is opened
+\letteropening{}
+% How the letter is closed
+\letterclosing{}
+% Any enclosures with the letter
+\letterenclosure{}
+
+%-------------------------------------------------------------------------------
 \begin{document}
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[L]
+\makecvheader[R]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
-  {Bradley Kohler~~~·~~~Personal Biography}
+  {March 4, 2019}
+  {Bradley Kohler~~~·~~~Nominee's Bio}
   {}
 
-%-------------------------------------------------------------------------------
-%	BIOGRAPHY CONTENT
-%	Each section is imported separately, open each file in turn to modify content
-%-------------------------------------------------------------------------------
-\input{personal_bio/hometown.tex}
-\input{personal_bio/education.tex}
-\input{personal_bio/interests_engineer.tex}
-\input{personal_bio/interests_personal.tex}
-\input{personal_bio/future.tex}
+% Print the title with above letter informations
+\makelettertitle
 
 %-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\section*{Nominee's Bio}
+\begin{center}
+\begin{quote}
+```Bradley Kohler is a fourth year student studying Mechatronics Engineering at McMaster university.  Over the past ten months Bradley has worked as a member of the advanced research team at Northern Digital Inc. in Waterloo.  He is an energetic student who learns quickly and works independently to produce high-quality solutions to challenging problems. Bradley has implemented several algorithms from idea to functioning proof of concept and achieving level 4 on NASA's Technology Readiness Scale.  He has brought up several new PCB boards for the first time from NDI's prototype manufacturing shop enabling firmware teams to work on real hardware.  He has written several low-level drivers to access data from inertial units, signal analyzers, touchpads and more.  Bradley values teamwork and always shows a real passion to solving problems in multiple disciplines.''
+\end{quote}
+\end{center}
+
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+%\makeletterclosing
+
 \end{document}
