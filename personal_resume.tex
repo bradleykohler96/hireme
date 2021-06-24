@@ -17,7 +17,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[14pt, a4paper]{awesome-cv}
+\documentclass[11pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -35,28 +35,32 @@
 % Colors for text
 % Uncomment if you would like to specify your own color
 %\definecolor{darktext}{HTML}{000000}
-\definecolor{text}{HTML}{000000}
-\definecolor{graytext}{HTML}{000000}
+%\definecolor{text}{HTML}{000000}
+%\definecolor{graytext}{HTML}{000000}
 %\definecolor{lighttext}{HTML}{000000}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{false}
+\setbool{acvSectionColorHighlight}{true}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,right]{images/photo.jpg}
+% \photo[circle,noedge,left]{images/photo.jpg}
 \name{Bradley}{Kohler}
-\position{Mechatronics Engineer{\enskip\cdotp\enskip}University Graduate}
-\address{Waterloo, ON, Canada}
+\position{Mechatronics Engineer{\enskip\cdotp\enskip}3 Years of Professional Work Experience}
+\address{Toronto, ON, Canada}
 
 % \mobile{(+999) 999 9999}
-\email{studentbrad.github@gmail.com}
+\email{bradleykohler96@gmail.com}
 \github{studentbrad}
 % \gitlab{gitlab-id}
 \stackoverflow{9246673}{studentbrad}
@@ -66,57 +70,30 @@
 % \extrainfo{extra informations}
 
 %-------------------------------------------------------------------------------
-%	LETTER INFORMATION
-%	All of the below lines must be filled out
-%-------------------------------------------------------------------------------
-% The company being applied to
-\recipient
-  {Engineering Co-op and Career Services}
-  {McMaster University\\1280 Main Street West\\Hamilton, Ontario\\L8S 4L8}
-% The date on the letter, default is the date of compilation
-\letterdate{March 4, 2019}
-% The title of the letter
-\lettertitle{}
-% How the letter is opened
-\letteropening{}
-% How the letter is closed
-\letterclosing{}
-% Any enclosures with the letter
-\letterenclosure{}
-
-%-------------------------------------------------------------------------------
 \begin{document}
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[R]
+\makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {March 4, 2019}
-  {Bradley Kohler~~~·~~~Nominee's Bio}
-  {}
-
-% Print the title with above letter informations
-\makelettertitle
+  {\today}
+  {Bradley Kohler~~~·~~~Resume}
+  {\thepage}
 
 %-------------------------------------------------------------------------------
-%	LETTER CONTENT
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\begin{cvletter}
-
-\section*{Nominee's Bio}
-\begin{center}
-\begin{quote}
-```Bradley Kohler is a fourth year student studying Mechatronics Engineering at McMaster university.  Over the past ten months Bradley has worked as a member of the advanced research team at Northern Digital Inc. in Waterloo.  He is an energetic student who learns quickly and works independently to produce high-quality solutions to challenging problems. Bradley has implemented several algorithms from idea to functioning proof of concept and achieving level 4 on NASA's Technology Readiness Scale.  He has brought up several new PCB boards for the first time from NDI's prototype manufacturing shop enabling firmware teams to work on real hardware.  He has written several low-level drivers to access data from inertial units, signal analyzers, touchpads and more.  Bradley values teamwork and always shows a real passion to solving problems in multiple disciplines.''
-\end{quote}
-\end{center}
-
-\end{cvletter}
+% \input{personal_resume/summary.tex}
+\input{personal_resume/skills.tex}
+\input{personal_resume/experience.tex}
+\input{personal_resume/education.tex}
+\input{personal_resume/projects.tex}
+% \input{personal_resume/research.tex}
+% \input{personal_resume/extracurricular.tex}
 
 %-------------------------------------------------------------------------------
-% Print the signature and enclosures with above letter informations
-%\makeletterclosing
-
 \end{document}

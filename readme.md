@@ -44,22 +44,22 @@ make clean
 
 | Page. 1 |
 |:---:|
-| [![Résumé](images/studentbrad_personal_resume-001.jpg)](build/studentbrad_personal_resume.pdf)  |
+| [![Résumé](images/personal_resume-001.jpg)](build/personal_resume.pdf)  |
 
 ### Personal Bio
 
 | Page. 1 |
 |:---:|
-| [![Biography](images/studentbrad_personal_bio-001.jpg)](build/studentbrad_personal_bio.pdf) |
+| [![Biography](images/personal_bio-001.jpg)](build/personal_bio.pdf) |
 
 ### Student Coop Nomination - Personal Statement
 
 | Page. 1 | Page. 2 |
 |:---:|:---:|
-| [![Personal Statement](images/studentbrad_coop_personal_statement-001.jpg)](build/studentbrad_coop_personal_statement.pdf) | [![Personal Statement](images/studentbrad_coop_personal_statement-002.jpg)](build/studentbrad_coop_personal_statement.pdf) |
+| [![Personal Statement](images/coop_personal_statement-001.jpg)](build/coop_personal_statement.pdf) | [![Personal Statement](images/coop_personal_statement-002.jpg)](build/coop_personal_statement.pdf) |
 
 ### Student Coop Nomination - Nominee Bio
 
 | Page. 1 |
 |:---:|
-| [![Nominee Bio](images/studentbrad_coop_nominee_bio-001.jpg)](build/studentbrad_coop_nominee_bio.pdf) |
+| [![Nominee Bio](images/coop_nominee_bio-001.jpg)](build/coop_nominee_bio.pdf) |
