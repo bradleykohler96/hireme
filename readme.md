@@ -4,7 +4,7 @@
 
 ## About me
 
-Mechatronics engineer at McMaster University. <br />
+Bachelors of Mechatronics Engineering, graduated from McMaster University. <br />
 Coding is my passion. <br />
 I like to solve new, challenging problems. <br />
 My programming skills include (but are not limited to): <br />
