@@ -8,7 +8,7 @@ else
 	GS = gs
 endif
 
-all: coop_nominee_bio_pdf coop_personal_statement_pdf personal_bio_pdf personal_resume_pdf
+all: coop_nominee_bio coop_personal_statement personal_bio personal_resume
 
 coop_nominee_bio: coop_nominee_bio.tex
 	latexmk -xelatex coop_nominee_bio.tex \
