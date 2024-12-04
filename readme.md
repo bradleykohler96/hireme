@@ -4,39 +4,21 @@
 
 ## About me
 
-Bachelors of Mechatronics Engineering, graduated from McMaster University. <br />
-Coding is my passion. <br />
-I like to solve new, challenging problems. <br />
-My programming skills include (but are not limited to): <br />
- - BASH, C/C++, Python, Java and HTML/CSS/Javascript
- - Machine Learning (Pytorch, Tensorflow)
- - Microprocessor Firmware (STM32, Nordic, Qualcomm Simulink)
- - Operating Systems (Linux, AndroidOS, mbedOS, ChibiOS, FreeRTOS)
- - Hardware Design (Verilog HDL, NI Multisim, Eagle)
- - Systems Design (AutoCAD, SolidWorks, Maplesim)
- - Mathematics (Maple18, NumPy, Eigen, MATLAB)
+I am a very self-motivated developer and engineer with a passion for solving new, challenging problems. <br />
+I have a lot of experience bringing devices from idea or functioning proof of concept to market. <br />
+My skills include (but are not limited to): <br />
+
+**Programming Languages** | **Machine Learning** | **MCU Firmware** | **Operating Systems** | **Hardware Design** | **Systems Design** | **Computer Mathematics** | **Continuous Integration**
+--------------------------|----------------------|------------------|-----------------------|---------------------|--------------------|--------------------------|----------------------------
+BASH                      | PyTorch              | STM32            | Linux                 | Verilog HDL         | AutoCAD            | Maple18                  | Docker
+C/C++/C#                  | TensorFlow           | Nordic           | AndroidOS             | NI Multisim         | SolidWorks         | NumPy                    | TravisCI
+Python                    | Nvidia CUDA          | Qualcomm         | mbedOS                | Eagle               | Maplesim           | Eigen                    | CircleCI
+Java                      |                      | Simulink         | ChibiOS               |                     |                    | MATLAB                   | Jenkins
+HTML/CSS/JavaScript       |                      |                  | FreeRTOS              |                     |                    |                          | Bamboo
 
 ## What is in here?
 
 In this repo you will find my resume, CV, coverletter and other documents that I have written for awards.
-
-## Getting Started
-
-This project depends on the following packages:
-
- - [GhostScript](https://www.ghostscript.com)
-
-If no ghostscript is installed images won't be regenerated for readme.md.
-
-To build my application simply run
-```
-make
-```
-
-To clean my application simply run
-```
-make clean
-```
 
 ## Preview
 
@@ -63,3 +45,22 @@ make clean
 | Page. 1 |
 |:---:|
 | [![Nominee Bio](images/coop_nominee_bio-001.jpg)](build/coop_nominee_bio.pdf) |
+
+## Build My Job Application
+
+This project depends on the following packages:
+
+ - [Latexmk](https://mg.readthedocs.io/latexmk.html)
+ - [GhostScript](https://www.ghostscript.com)
+
+If no ghostscript is installed images won't be regenerated for readme.md.
+
+To build my application simply run
+```
+make
+```
+
+To clean my application simply run
+```
+make clean
+```
