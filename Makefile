@@ -3,14 +3,17 @@ IMAGEDIR = images
 IMAGES = $(IMAGEDIR)/*
 
 ifeq ($(OS),Windows_NT)
+    CV = awesome-cv-win.cls
 	GS = gswin64c.exe
 else
+    CV = awesome-cv-linux.cls
 	GS = gs
 endif
 
 all: coop_nominee_bio coop_personal_statement personal_bio personal_resume
 
 coop_nominee_bio: coop_nominee_bio.tex
+	cp $(CV) awesome-cv.cls
 	latexmk -xelatex coop_nominee_bio.tex \
 	-output-directory=build
 	rm -f $(IMAGEDIR)/coop_nominee_bio-*.jpg
@@ -19,6 +22,7 @@ coop_nominee_bio: coop_nominee_bio.tex
 	$(BUILDDIR)/coop_nominee_bio.pdf -dBATCH
 
 coop_personal_statement: coop_personal_statement.tex
+	cp $(CV) awesome-cv.cls
 	latexmk -xelatex coop_personal_statement.tex \
 	-output-directory=build
 	rm -f $(IMAGEDIR)/coop_personal_statement-*.jpg
@@ -27,6 +31,7 @@ coop_personal_statement: coop_personal_statement.tex
 	$(BUILDDIR)/coop_personal_statement.pdf -dBATCH
 
 personal_bio: personal_bio.tex ./personal_bio/*.tex
+	cp $(CV) awesome-cv.cls
 	latexmk -xelatex personal_bio.tex \
 	-output-directory=build
 	rm -f $(IMAGEDIR)/personal_bio-*.jpg
@@ -35,6 +40,7 @@ personal_bio: personal_bio.tex ./personal_bio/*.tex
 	$(BUILDDIR)/personal_bio.pdf -dBATCH
 
 personal_resume: personal_resume.tex ./personal_resume/*.tex
+	cp $(CV) awesome-cv.cls
 	latexmk -xelatex personal_resume.tex \
 	-output-directory=build
 	rm -f $(IMAGEDIR)/personal_resume-*.jpg

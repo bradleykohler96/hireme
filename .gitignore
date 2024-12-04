@@ -22,3 +22,7 @@
 ### Mac OS X ###
 ## Mac OS X metadata files:
 *.DS_Store
+
+
+### Other ###
+awesome-cv.cls
