@@ -10,25 +10,7 @@ else
 	GS = gs
 endif
 
-all: coop_nominee_bio coop_personal_statement personal_bio personal_resume
-
-coop_nominee_bio: coop_nominee_bio.tex
-	cp $(CV) awesome-cv.cls
-	latexmk -xelatex coop_nominee_bio.tex \
-	-output-directory=build
-	rm -f $(IMAGEDIR)/coop_nominee_bio-*.jpg
-	$(GS) -q -dNOPAUSE -sDEVICE=jpeg -r400 -dJPEGQ=60 \
-	-sOutputFile=$(IMAGEDIR)/coop_nominee_bio-%03d.jpg \
-	$(BUILDDIR)/coop_nominee_bio.pdf -dBATCH
-
-coop_personal_statement: coop_personal_statement.tex
-	cp $(CV) awesome-cv.cls
-	latexmk -xelatex coop_personal_statement.tex \
-	-output-directory=build
-	rm -f $(IMAGEDIR)/coop_personal_statement-*.jpg
-	$(GS) -q -dNOPAUSE -sDEVICE=jpeg -r400 -dJPEGQ=60 \
-	-sOutputFile=$(IMAGEDIR)/coop_personal_statement-%03d.jpg \
-	$(BUILDDIR)/coop_personal_statement.pdf -dBATCH
+all: personal_bio personal_resume
 
 personal_bio: personal_bio.tex ./personal_bio/*.tex
 	cp $(CV) awesome-cv.cls
