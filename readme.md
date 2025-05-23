@@ -8,13 +8,14 @@ I am a very self-motivated developer and engineer with a passion for solving new
 I have a lot of experience bringing devices from idea or functioning proof of concept to market. <br />
 My skills include (but are not limited to): <br />
 
-**Programming Languages** | **Machine Learning** | **MCU Firmware** | **Operating Systems** | **Hardware Design** | **Systems Design** | **Computer Mathematics** | **Continuous Integration**
---------------------------|----------------------|------------------|-----------------------|---------------------|--------------------|--------------------------|----------------------------
-BASH                      | PyTorch              | STM32            | Linux                 | Verilog HDL         | AutoCAD            | Maple18                  | Docker
-C/C++/C#                  | TensorFlow           | Nordic           | AndroidOS             | NI Multisim         | SolidWorks         | NumPy                    | TravisCI
-Python                    | Nvidia CUDA          | Qualcomm         | mbedOS                | Eagle               | Maplesim           | Eigen                    | CircleCI
-Java                      |                      | Simulink         | ChibiOS               |                     |                    | MATLAB                   | Jenkins
-HTML/CSS/JavaScript       |                      |                  | FreeRTOS              |                     |                    |                          | Bamboo
+**Programming Languages** | **Machine Learning** | **Embedded Systems** | **Operating Systems** | **Hardware Design & CAD** | **Modelling, Simulation & Math** | **DevOps / CI Tools**    | **Wireless Protocols**
+--------------------------|----------------------|----------------------|-----------------------|---------------------------|----------------------------------|--------------------------|----------------------------
+C, C++, C#                | PyTorch              | STM32                | Linux                 | SolidWorks                | Simulink                         | Docker                   | ZigBee
+Python                    | TensorFlow           | Nordic               | Debian                | AutoCAD                   | MATLAB                           | Jenkins                  | Thread
+Java                      | Nvidia CUDA          | Qualcomm             | Ubuntu                | Eagle                     | MapleSim                         | TravisCI                 | BLE
+BASH                      |                      | FreeRTOS             | Windows               | NI Multisim               | Maple 18                         | CircleCI                 | LTE (NB, MTC)
+Verilog HDL               |                      | ChibiOS              | AndroidOS             |                           | NumPy                            | Bamboo                   | MAC 802.15.4
+HTML/CSS/JavaScript       |                      | mbedOS               |                       |                           | Eigen                            |                          |
 
 ## What is in here?
 
@@ -33,18 +34,6 @@ In this repo you will find my resume, CV, coverletter and other documents that I
 | Page. 1 |
 |:---:|
 | [![Biography](images/personal_bio-001.jpg)](build/personal_bio.pdf) |
-
-### Student Coop Nomination - Personal Statement
-
-| Page. 1 | Page. 2 |
-|:---:|:---:|
-| [![Personal Statement](images/coop_personal_statement-001.jpg)](build/coop_personal_statement.pdf) | [![Personal Statement](images/coop_personal_statement-002.jpg)](build/coop_personal_statement.pdf) |
-
-### Student Coop Nomination - Nominee Bio
-
-| Page. 1 |
-|:---:|
-| [![Nominee Bio](images/coop_nominee_bio-001.jpg)](build/coop_nominee_bio.pdf) |
 
 ## Build My Job Application
 
