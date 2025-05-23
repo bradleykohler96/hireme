@@ -4,8 +4,11 @@
 
 ## About me
 
-I am a very self-motivated developer and engineer with a passion for solving new, challenging problems. <br />
-I have a lot of experience bringing devices from idea or functioning proof of concept to market. <br />
+I'm a Toronto-based embedded systems developer with a B.Eng. in Mechatronics Engineering (Co-op) from McMaster University and 6 years of hands-on experience in the field.
+I specialize in building low-level firmware, wireless communication stacks (ZigBee, BLE, LTE NB-IoT), and system-level tools that bridge hardware and software.
+My focus is on reliable, real-time C/C++ systems that deliver meaningful performance and impact.
+I'm passionate about scalable embedded solutions and always looking to contribute to projects that solve real-world problems with elegance and precision.
+
 My skills include (but are not limited to): <br />
 
 **Programming Languages** | **Machine Learning** | **Embedded Systems** | **Operating Systems** | **Hardware Design & CAD** | **Modelling, Simulation & Math** | **DevOps / CI Tools**    | **Wireless Protocols**
